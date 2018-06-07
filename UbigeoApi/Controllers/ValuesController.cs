@@ -1,18 +1,24 @@
-﻿using System;
+﻿using Common.BusinessContracts;
+using Common.DataAccessContracts;
+using Common.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace UbigeoApi.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        private IPoliceManager _policeManager;
+
+        public ValuesController(IPoliceManager policeManager)
         {
-            return new string[] { "value1", "value2" };
+            _policeManager = policeManager;
+        }
+
+        // GET api/values
+        public IEnumerable<Police> Get()
+        {
+            return _policeManager.GetAll();
         }
 
         // GET api/values/5
