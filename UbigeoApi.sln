@@ -5,13 +5,11 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UbigeoApi", "UbigeoApi\UbigeoApi.csproj", "{989C003F-0CC5-46CE-869F-08B1C880A32D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UbigeoApi.Tests", "UbigeoApi.Tests\UbigeoApi.Tests.csproj", "{A9FEA004-EF0A-46A7-A357-36F6D82F5013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.DataAccess", "0.DataAccess\0.DataAccess.csproj", "{508C618A-CD5C-4396-A763-2E93C61866C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.DataAccess", "0.DataAccess\0.DataAccess.csproj", "{508C618A-CD5C-4396-A763-2E93C61866C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.Business", "1.Business\1.Business.csproj", "{D390231F-A565-4A8C-8FB7-2EB276166107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Business", "1.Business\1.Business.csproj", "{D390231F-A565-4A8C-8FB7-2EB276166107}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Common", "2.Common\2.Common.csproj", "{0BEA71B7-E7EF-41EE-B883-D4A9CD53A91B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.Common", "2.Common\2.Common.csproj", "{0BEA71B7-E7EF-41EE-B883-D4A9CD53A91B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{989C003F-0CC5-46CE-869F-08B1C880A32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{989C003F-0CC5-46CE-869F-08B1C880A32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{989C003F-0CC5-46CE-869F-08B1C880A32D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9FEA004-EF0A-46A7-A357-36F6D82F5013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9FEA004-EF0A-46A7-A357-36F6D82F5013}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9FEA004-EF0A-46A7-A357-36F6D82F5013}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9FEA004-EF0A-46A7-A357-36F6D82F5013}.Release|Any CPU.Build.0 = Release|Any CPU
 		{508C618A-CD5C-4396-A763-2E93C61866C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{508C618A-CD5C-4396-A763-2E93C61866C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508C618A-CD5C-4396-A763-2E93C61866C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
