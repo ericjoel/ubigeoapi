@@ -9,7 +9,8 @@ namespace UbigeoApi
     {
         public static void Register(HttpConfiguration config)
         {
-            // Configuración y servicios de API web
+            //Enable Cors in project
+            config.EnableCors();
 
             // Rutas de API web
             config.MapHttpAttributeRoutes();
