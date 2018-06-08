@@ -37,7 +37,7 @@ namespace Common.Model
         {
             var results = new List<ValidationResult>();
 
-            if (StartDate > DateTime.Now)
+            if (StartDate > DateTime.UtcNow.AddHours(-5))
                 results.Add(new ValidationResult("The start date must be less than today"));
             
             return results;

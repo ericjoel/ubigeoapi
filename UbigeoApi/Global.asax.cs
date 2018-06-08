@@ -38,6 +38,7 @@ namespace UbigeoApi
             builder.RegisterType<DistrictRepository>().As<IDistrictRepository>();
             builder.RegisterType<ProvinceRepository>().As<IProvinceRepository>();
             builder.RegisterType<PoliceManager>().As<IPoliceManager>();
+            builder.RegisterType<UbigeoManager>().As<IUbigeoManager>();
 
             Container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(Container);
