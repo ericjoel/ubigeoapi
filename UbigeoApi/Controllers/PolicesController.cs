@@ -9,7 +9,7 @@ using System.Web.Http.Cors;
 
 namespace UbigeoApi.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class PolicesController : ApiController
     {
         private IPoliceManager _policeManager;

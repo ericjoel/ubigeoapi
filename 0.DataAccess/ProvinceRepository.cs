@@ -35,7 +35,7 @@ namespace DataAccess
         /// <returns>provinces searched</returns>
         public IEnumerable<Province> GetByIdDepartment(string idDepartment)
         {
-            return Collection.Find(p => p.IdDepartment.Equals(idDepartment)).ToEnumerable();
+            return Collection.Find(p => p.IdDepartment.Equals(idDepartment)).Sort("{ name: 1 }").ToEnumerable();
         }
     }
 }

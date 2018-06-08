@@ -1,4 +1,5 @@
-﻿using Common.DataAccessContracts;
+﻿using System.Collections.Generic;
+using Common.DataAccessContracts;
 using Common.Model;
 using MongoDB.Driver;
 
@@ -24,6 +25,11 @@ namespace DataAccess
         public override Department FindById(object id)
         {
             return Collection.Find(d => d.Id.Equals(id)).FirstOrDefault();
+        }
+
+        public override IEnumerable<Department> GetAll()
+        {
+            return Collection.Find(_ => true).Sort("{ name: 1 }").ToEnumerable();
         }
     }
 }

@@ -31,7 +31,7 @@ namespace DataAccess
         /// Generic method to get all registers in collection
         /// </summary>
         /// <returns>list of models</returns>
-        public IEnumerable<TEntity> GetAll()
+        public virtual IEnumerable<TEntity> GetAll()
         {
             return Collection.Find(_ => true).ToEnumerable();
         }

@@ -35,7 +35,7 @@ namespace DataAccess
         /// <returns>The list of district than match with idprovince</returns>
         public IEnumerable<District> GetByIdProvince(string idProvince)
         {
-            return Collection.Find(p => p.IdProvince.Equals(idProvince)).ToEnumerable();
+            return Collection.Find(p => p.IdProvince.Equals(idProvince)).Sort("{ name: 1 }").ToEnumerable();
         }
     }
 }
